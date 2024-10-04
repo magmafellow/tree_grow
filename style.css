@@ -3,7 +3,7 @@
 }
 
 .container {
-  padding: 68px 38px;
+  padding: 68px 38px 20px 38px;
   font-family: Helvetica, sans-serif;
   color: #737373;
   max-width: 1052px;
@@ -139,6 +139,8 @@
 
 .fill-tree {
   text-align: start;
+  position: relative;
+  z-index: 42;
 }
 .fill-tree button {
   padding: 10px 30px;
@@ -161,6 +163,7 @@
   height: 452px;
   width: 100%;
   display: flex;
+  transform: translateY(-50px);
   align-items: flex-end;
   justify-content: center;
 }

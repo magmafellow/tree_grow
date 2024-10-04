@@ -4,25 +4,25 @@ const list = document.querySelector('.list')
 const tree = document.querySelector('.tree')
 let coeff = 1
 
-
 function onAddClick() {
   const allItems = document.querySelectorAll('.item')
-  const previousLi = allItems[allItems.length - 1] 
+  const previousLi = allItems[allItems.length - 1]
   const allNs = previousLi.querySelectorAll('.item__n')
   const previousNumber = allNs[allNs.length - 1].textContent
 
   const newLi = previousLi.cloneNode(true)
   list.appendChild(newLi)
   newLi.querySelector('.item__n').textContent = Number(previousNumber) + 1
-  
 }
 
 function onFillTree() {
   console.log('fill pressed')
-  if (coeff >= 3) return false
-  else if (coeff >= 1 && coeff <= 3) {
-    coeff += 0.15;
-    
+  if (coeff >= 2.41) return false
+  else if (coeff >= 1 && coeff <= 2.41) {
+    coeff += 0.15
+
+    if (coeff > 2.41) coeff = 2.41
+
     tree.style.transform = `scale(${coeff})`
   }
 }
