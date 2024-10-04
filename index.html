@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task #2</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="hr mb4"></div>
+      <h1 class="title-page">Объем потребляемых ресурсов</h1>
+      <h2 class="title-page-2">Вода:</h2>
+      <div class="head-box">
+        <span class="head-box__1">№ п./п.</span>
+        <span class="head-box__2">Период</span>
+        <span class="head-box__3">Количество потребленных ресурсов</span>
+      </div>
+      <div class="hr mb4"></div>
+      <ul class="list">
+        <li class="item">
+          <div class="item__n">1</div>
+          <div class="item__month">
+            <select name="month" id="month">
+              <option value="january">январь</option>
+              <option value="february">февраль</option>
+              <option value="march">март</option>
+              <option value="aprial">апрель</option>
+              <option value="may">май</option>
+              <option value="june">июнь</option>
+              <option value="july">июль</option>
+              <option value="august">авгус</option>
+              <option value="september">сентябрь</option>
+              <option value="october">октябрь</option>
+              <option value="november">ноябрь</option>
+              <option value="december">декабрь</option>
+            </select>
+          </div>
+          <div class="item__year">
+            <select name="year" id="year">
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+            </select>
+          </div>
+          <div class="item__hvs">
+            <div>ХВС:</div>
+            <input id="hvs-input" type="text">
+            <div>м<sup>3</sup></div>
+          </div>
+          <div class="item__gvs">
+            <div>ХВС:</div>
+            <input id="hvs-input" type="text">
+            <div>м<sup>3</sup></div>
+          </div>
+        </li>
+        <li></li>
+      </ul>
+      <div class="add-item">
+        <button>Добавить строку</button>
+      </div>
+      <div class="fill-tree">
+        <button>Заполнить дерево</button>
+      </div>
+    </div>
+    <div class="tree-container">
+      <img class="tree" src="./img/tree.svg" alt="">
+        
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

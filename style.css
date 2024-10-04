@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 68px 38px;
+  font-family: Helvetica, sans-serif;
+  color: #737373;
+  max-width: 1052px;
+}
+
+.hr {
+  height: 1px;
+  background-color: #EDEAEA;
+  width: 100%;
+}
+
+.mb4 {
+  margin-bottom: 16px;
+}
+
+.title-page {
+  margin-bottom: 30px;
+}
+
+.title-page-2 {
+  margin-bottom: 20px;
+}
+
+.head-box {
+  margin-bottom: 37px;
+}
+.head-box__1 {
+  margin-right: 50px;
+}
+.head-box__2 {
+  margin-right: 150px;
+}
+.head-box__3 {
+
+}
+
+
+.list {
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #EDEAEA;
+  padding-bottom: 28px;
+}
+
+.item__n {
+  margin-right: 90px;
+}
+.item__month {
+  margin-right: 16px;
+}
+.item__month select, .item__year select, .item__hvs select, .item__gvs select {
+  border: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #44BABD;
+  color: #737373;
+  font-family: Helvetica;
+}
+.item__year {
+  margin-right: 40px;
+}
+.item__hvs {
+  margin-right: 76px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.item__hvs input {
+  border: none;
+  padding-top: 8px;
+  width: 60px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: #737373;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #44BABD;
+}
+.item__hvs input:focus {
+  border: none;
+  border-bottom: 1px solid #44BABD;
+  outline: none;
+}
+.item__gvs {}
+
+.item__hvs {
+  margin-right: 76px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.item__gvs input {
+  border: none;
+  padding-top: 8px;
+  width: 60px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: #737373;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #44BABD;
+}
+.item__gvs input:focus {
+  border: none;
+  border-bottom: 1px solid #44BABD;
+  outline: none;
+}
+.item__gvs {
+  margin-right: 76px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.add-item {
+  text-align: end;
+  margin-bottom: 16px;
+}
+.add-item button {
+  padding: 10px 30px;
+  border-radius: 999px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #44BABD;
+  color: white;
+  transition: 0.17s;
+  cursor: pointer;
+}
+.add-item button:hover {
+  background-color: #4ec9cb;
+}
+
+.fill-tree {
+  text-align: start;
+}
+.fill-tree button {
+  padding: 10px 30px;
+  border-radius: 999px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #44BABD;
+  color: white;
+  transition: 0.17s;
+  cursor: pointer;
+}
+.fill-tree button:hover {
+  background-color: #4ec9cb;
+}
+
+
+/* tree container */
+
+.tree-container {
+  height: 452px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.tree-container img {
+  
+
+  transition: 0.34s;
+}
+
+/* end tree container */
