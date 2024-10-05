@@ -35,6 +35,9 @@ function onChangeHandler(e) {
   if (total === 100) {
     coeff = 2.41
     tree.style.transform = `scale(${coeff})`
+  } else {
+    coeff = 1
+    tree.style.transform = `scale(${coeff})`
   }
 }
 
