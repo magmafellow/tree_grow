@@ -2,7 +2,12 @@ console.log('Hello Tree!')
 
 const list = document.querySelector('.list')
 const tree = document.querySelector('.tree')
+let allInputs = document.querySelectorAll('input')
 let coeff = 1
+
+allInputs.forEach((item) => {
+  item.addEventListener('change', onChangeHandler)
+})
 
 function onAddClick() {
   const allItems = document.querySelectorAll('.item')
@@ -11,8 +16,26 @@ function onAddClick() {
   const previousNumber = allNs[allNs.length - 1].textContent
 
   const newLi = previousLi.cloneNode(true)
-  list.appendChild(newLi)
   newLi.querySelector('.item__n').textContent = Number(previousNumber) + 1
+  list.appendChild(newLi)
+
+  allInputs = document.querySelectorAll('input')
+  console.log(allInputs)
+  allInputs.forEach((item) => {
+    item.addEventListener('change', onChangeHandler)
+  })
+}
+
+function onChangeHandler(e) {
+  let total = 0;
+  allInputs.forEach((item) => {
+    total += Number(item.value)
+  })
+  console.log(total)
+  if (total === 100) {
+    coeff = 2.41
+    tree.style.transform = `scale(${coeff})`
+  }
 }
 
 function onFillTree() {
